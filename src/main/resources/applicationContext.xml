@@ -9,7 +9,6 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	
-	<jee:jndi-lookup id="dataSource" jndi-name="java:jboss/datasources/ExampleDS"/>
 	
 
 	<bean id="dataSource"

@@ -26,7 +26,7 @@ public class JDBCCustomerDAOImpl implements JDBCCustomerDAO{
  
 	public void createTable() {
 		jdbcTemplate = new JdbcTemplate(dataSource);
-		jdbcTemplate.execute("create table customer (name varchar, surname varchar, age integer)");
+		jdbcTemplate.execute("create table customer (name varchar(20), surname varchar(20), age integer(20))");
 	}
 	
 	public void dropTable() {
