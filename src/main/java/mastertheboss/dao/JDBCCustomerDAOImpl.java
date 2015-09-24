@@ -36,7 +36,7 @@ public class JDBCCustomerDAOImpl implements JDBCCustomerDAO{
   
 	public void insert(Customer customer){
  
-		String sql = "INSERT INTO CUSTOMER " +
+		String sql = "INSERT INTO customer " +
 			"(NAME,SURNAME, AGE) VALUES (?, ?, ?)";
  
 		jdbcTemplate = new JdbcTemplate(dataSource);
