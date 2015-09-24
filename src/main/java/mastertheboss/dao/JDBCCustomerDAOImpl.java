@@ -26,17 +26,17 @@ public class JDBCCustomerDAOImpl implements JDBCCustomerDAO{
  
 	public void createTable() {
 		jdbcTemplate = new JdbcTemplate(dataSource);
-		jdbcTemplate.execute("create table customer (name varchar(20), surname varchar(20), age integer(20))");
+		jdbcTemplate.execute("create table CUSTOMER (NAME varchar(20), SURNAME varchar(20), AGE integer(20))");
 	}
 	
 	public void dropTable() {
 		jdbcTemplate = new JdbcTemplate(dataSource);
-		jdbcTemplate.execute("drop table customer");
+		jdbcTemplate.execute("drop table CUSTOMER");
 	}
   
 	public void insert(Customer customer){
  
-		String sql = "INSERT INTO customer " +
+		String sql = "INSERT INTO CUSTOMER " +
 			"(NAME,SURNAME, AGE) VALUES (?, ?, ?)";
  
 		jdbcTemplate = new JdbcTemplate(dataSource);
