@@ -11,14 +11,14 @@
 	
 	<jee:jndi-lookup id="dataSource" jndi-name="java:jboss/datasources/ExampleDS"/>
 	
-	<!-- 
+
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/as7development" />
-		<property name="username" value="jboss" />
-		<property name="password" value="jboss" />
+		<property name="url" value="jdbc:mysql://172.17.0.168:3306/test" />
+		<property name="username" value="admin" />
+		<property name="password" value="admin" />
 	</bean>
-	 -->
+	
 </beans>
